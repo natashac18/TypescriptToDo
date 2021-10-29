@@ -26,9 +26,9 @@ To get a local copy up and running follow these simple steps.
 - A Code Editor of your choice
 
 ### To clone the repo to your local repository:
-``
+`https://github.com/natashac18/TypescriptToDo.git`
 
-``
+`cd TypescriptToDo.git`
 
 Open index.html in your preferred browser
 
