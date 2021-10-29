@@ -2,7 +2,7 @@
 A To-do App created using HTML, CSS and Typescript.
 
 ## Live Demo
-[Live Demo Link]()
+[Live Demo Link](https://natashac18.github.io/TypescriptToDo/)
 
 
 ## Screenshot
