@@ -116,17 +116,20 @@ class TodoInput {
     
                 title_input_el.removeAttribute("readonly");
                 description_input_el.removeAttribute("readonly");
+                start_input_el.removeAttribute("readonly");
                 due_input_el.removeAttribute("readonly");
                
     
                 title_input_el.focus();
                 description_input_el.focus();
+                start_input_el.focus();
                 due_input_el.focus();
                 
             } else {
                 task_edit_el.innerText = "Edit";
                 title_input_el.setAttribute("readonly", "readonly");
                 description_input_el.setAttribute("readonly", "readonly");
+                start_input_el.setAttribute("readonly", "readonly");
                 due_input_el.setAttribute("readonly", "readonly");
             }
         });
