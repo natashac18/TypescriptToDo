@@ -147,21 +147,21 @@ class TodoInput {
         // fill listeners
         todo_el.addEventListener('dragstart', dragStart);
         todo_el.addEventListener('dragend', dragEnd);
-        let draggableTodo: null = null;
+        let draggableTodo: HTMLDivElement|undefined;
         
-        for (const empty of empties) {
+        empties.forEach(empty=> {
           empty.addEventListener('dragover', dragOver);
           empty.addEventListener('dragenter', dragEnter);
           empty.addEventListener('dragleave', dragLeave);
           empty.addEventListener('drop', dragDrop);
-        }
+        });
                 // Drag Functions
-                function dragStart(this: any) {
+                function dragStart(this: HTMLDivElement) {
                     draggableTodo = this;
                 }
 
                 function dragEnd() {
-                    draggableTodo = null;
+                    draggableTodo = undefined;
                 }
 
                 function dragOver(event:Event) {
